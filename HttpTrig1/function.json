@@ -1,0 +1,21 @@
+{
+  "disabled": false,
+  "tracing": {
+    "consoleLevel": "verbose"
+  },
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "route": "session",
+      "methods": ["GET", "OPTIONS"],
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
